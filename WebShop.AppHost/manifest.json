@@ -1,0 +1,124 @@
+{
+  "resources": {
+    "api-gateway": {
+      "type": "project.v0",
+      "path": "..\\WebShop.ApiGateway.Ocelot\\WebShop.ApiGateway.Ocelot.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "catalog-api": {
+      "type": "project.v0",
+      "path": "..\\WebShop.Catalog.Api\\WebShop.Catalog.Api.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "inventory-api": {
+      "type": "project.v0",
+      "path": "..\\WebShop.Inventory.Api\\WebShop.Inventory.Api.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "order-api": {
+      "type": "project.v0",
+      "path": "..\\WebShop.Order.Api\\WebShop.Order.Api.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "payment-api": {
+      "type": "project.v0",
+      "path": "..\\WebShop.Payment.Api\\WebShop.Payment.Api.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "web-app": {
+      "type": "project.v0",
+      "path": "..\\WebShop.WebApp\\WebShop.WebApp.csproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true"
+      },
+      "bindings": {
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    }
+  }
+}

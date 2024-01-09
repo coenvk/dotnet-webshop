@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MediatR" Version="12.2.0"/>
+        <PackageReference Include="Rebus.RabbitMq" Version="9.0.1"/>
+        <PackageReference Include="Rebus.ServiceProvider" Version="10.0.0"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Toolkit\Toolkit.Endpoints.MediatR\Toolkit.Endpoints.MediatR.csproj"/>
+        <ProjectReference Include="..\..\Toolkit\Toolkit.Endpoints\Toolkit.Endpoints.csproj"/>
+        <ProjectReference Include="..\Toolkit.Sagas.Rebus.DependencyInjection\Toolkit.Sagas.Rebus.DependencyInjection.csproj"/>
+        <ProjectReference Include="..\WebShop.Payment.Contracts\WebShop.Payment.Contracts.csproj"/>
+        <ProjectReference Include="..\WebShop.ServiceDefaults\WebShop.ServiceDefaults.csproj"/>
+    </ItemGroup>
+
+</Project>
